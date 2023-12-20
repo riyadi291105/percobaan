@@ -1,0 +1,237 @@
+:root {
+    --blue: #2C2546;
+    --dark-blue: #181535;
+    --green: #00EB09;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+
+body {
+    background-color:var(--dark-blue)
+}
+
+header {
+    text-align: center;
+    background-color: var(--blue);
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    padding: 2%;
+    top: 0;
+}
+
+.title {
+    color: var(--green);
+    border-bottom: 1px solid var(--green);
+}
+
+.input-search {
+    width: 40%;
+    border: none;
+    border-radius: 0 0 0 10px;
+    padding: 2px;
+}
+
+.input-submit {
+    margin-left: -5px;
+    border: none;
+    border-radius: 0 10px 0 0;
+    padding: 2px;
+    background-color: var(--green);
+    color: var(--blue);
+    width: 5%;
+    font-weight: bold;
+}
+/* .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  text-decoration: none;
+  color: var(--green);
+  font-size: 16px;
+} */
+
+
+/* Gaya untuk menyusun ul secara horizontal */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+/* Gaya untuk menyusun li secara horizontal */
+nav li {
+    margin-right: 30px; /* Sesuaikan jarak antar elemen sesuai keinginan Anda */
+}
+
+/* Gaya untuk mengatur tautan pada li */
+nav a {
+    text-decoration: none;
+    color: #15ff00; /* Sesuaikan warna sesuai keinginan Anda */
+    font-weight: bold; /* Atur ketebalan teks sesuai keinginan Anda */
+}
+
+/* Gaya saat tautan dihover */
+nav a:hover {
+    color: #FF0000; /* Sesuaikan warna saat dihover sesuai keinginan Anda */
+}
+
+
+.slider {
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 65%;
+}
+
+.slider h4 {
+    margin-top: 20%;
+}
+
+.slides {
+    display: flex;
+    width:100%;
+    overflow: hidden;
+}
+
+.slides img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    transition: .5s;
+}
+
+#choose_1:checked ~ .slides > .s1 {
+    margin-left: 0;
+}
+
+#choose_2:checked ~ .slides > .s1 {
+    margin-left: -100%;
+}
+
+.title-p {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--green);
+}
+
+.populer {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Mengubah jumlah kolom menjadi 4 */
+    gap: 1rem;
+    width: 90%; /* Menyesuaikan lebar section agar tidak terlalu lebar */
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.product {
+    width: 100%; /* Menyesuaikan lebar setiap produk agar sesuai dengan kolom grid */
+}
+
+.populer img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.product-title {
+color:var(--green);
+font-weight: bold;
+
+}
+
+@media (max-width: 768px) {
+    .populer {
+        grid-template-columns: repeat(4, 1fr) !important; /* Mengubah menjadi 4 kolom pada tampilan seluler */
+    }
+}
+
+
+.sosmed img {
+    width: 50px;
+}
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+    color:var(--green);
+}
+
+.card
+{
+    background-color: var(--blue);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    margin-top: 2rem;
+    padding: 2%;
+}
+
+#copyright {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .slider, .card, .footer {
+        width: 100%;
+    }
+
+    .input-search {
+        width: 70%;
+    }
+
+    .input-submit {
+        width: 20%;
+    }
+
+    .populer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

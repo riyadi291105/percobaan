@@ -1,0 +1,64 @@
+body {
+    background-color: #181535;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.i-card {
+    width: 90%;
+    max-width: 500px;
+    background-color: #555259;
+    color: chartreuse;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.i-card-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: chartreuse;
+}
+
+.i-card-description {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.lihat-selengkapnya {
+    margin-left: auto;
+}
+
+.lihat-selengkapnya a {
+    color: chartreuse;
+}
+
+.paragraf-container {
+    flex-basis: 100%;
+}
+
+.paragraf1,
+.paragraf2 {
+    flex-basis: 50%;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .i-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .paragraf1,
+    .paragraf2 {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,62 @@
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Memusatkan vertikal */
+}
+
+nav img {
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+    filter: drop-shadow(2px 2px 2px #ffffff);
+}
+
+nav p {
+    margin: 0; /* Menghapus margin default paragraf */
+    color: #15ff00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Gaya tambahan untuk styling gambar */
+nav img {
+    max-width: 40px; /* Atur lebar maksimum gambar */
+    max-height: 40px; /* Atur tinggi maksimum gambar */
+}
+
+
+body {
+    background-color: #2C2546;
+}
+
+
+.Gambar {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+.gambar-link {
+    text-decoration: none; /* Remove underline from the link */
+    color: #15ff00; /* Set the link color */
+}
+
+.gambar-container {
+    display: flex;
+    align-items: center;
+    background-color: #181535;
+}
+
+.gambar-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.gambar-container p {
+    font-size: 14px;
+    color: #15ff00;
+    margin: 0;
+}
